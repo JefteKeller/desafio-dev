@@ -26,7 +26,7 @@ class Transaction(models.Model):
         help_text=_("Hora da ocorrência atendendo ao fuso de UTC-3")
     )
 
-    recipient_cpf = models.IntegerField(help_text=_("CPF do beneficiário"))
+    recipient_cpf = models.BigIntegerField(help_text=_("CPF do beneficiário"))
     card = models.CharField(
         max_length=120, help_text=_("Cartão utilizado na transação")
     )
